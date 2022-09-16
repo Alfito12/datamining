@@ -17,13 +17,13 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-pd.concat((PETAL_LENGTH_SERIES,petal_length_ew_binning), axis=1)
+pd.concat((petal_width_ew_binning, sepal_width_ew_binning, sepal_length_ew_binning, petal_length_ew_binning), axis=1)
 ------------------
 
 [0;31m[0m
 [0;31mNameError[0mTraceback (most recent call last)
-[0;32m<ipython-input-19-8900e3833232>[0m in [0;36m<module>[0;34m[0m
-[0;32m----> 1[0;31m [0mpd[0m[0;34m.[0m[0mconcat[0m[0;34m([0m[0;34m([0m[0mPETAL_LENGTH_SERIES[0m[0;34m,[0m[0mpetal_length_ew_binning[0m[0;34m)[0m[0;34m,[0m [0maxis[0m[0;34m=[0m[0;36m1[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m<ipython-input-19-d22604370823>[0m in [0;36m<module>[0;34m[0m
+[0;32m----> 1[0;31m [0mpd[0m[0;34m.[0m[0mconcat[0m[0;34m([0m[0;34m([0m[0mpetal_width_ew_binning[0m[0;34m,[0m [0msepal_width_ew_binning[0m[0;34m,[0m [0msepal_length_ew_binning[0m[0;34m,[0m [0mpetal_length_ew_binning[0m[0;34m)[0m[0;34m,[0m [0maxis[0m[0;34m=[0m[0;36m1[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
 [0m
 [0;31mNameError[0m: name 'petal_length_ew_binning' is not defined
 NameError: name 'petal_length_ew_binning' is not defined
